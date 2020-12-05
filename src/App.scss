@@ -1,0 +1,231 @@
+@import 'bulma';
+@import 'react-datepicker/dist/react-datepicker.css';
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+$main-color:#77645a;
+$second-color:#705d55;
+$dark-color:#727475;
+$grey-color: #6d6d6d;
+$low-opacity-color:#a3a3a3;
+$lightgrey-color: #f9f9f9;
+
+$main-font:'Poppins', sans-serif;
+
+$main-border: 1px solid rgba(119, 100, 90, 0.1);
+
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    color:$main-color;
+    font-family: $main-font, sans-serif;
+    /* font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+ 
+}   
+
+.mlr-auto{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.mtb-auto{
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+.ptb-auto{
+    padding-top:auto;
+    padding-bottom: auto;
+}
+
+.is-size-6o5{
+    font-size:0.9rem
+}
+
+.lineheight-md{
+    line-height: 1.8em;
+}
+
+.main-color{color:$main-color;}
+.main-bg{background:$main-color !important;}
+.second-color{color:$second-color}
+.second-bg{background:$second-color}
+.grey-color{color:$grey-color}
+.low-color{color:$low-opacity-color !important;}
+.lightgrey-bg{background:$lightgrey-color}
+
+.mybtn{
+    border:none;
+    background:$main-color;
+    color:white;
+    cursor: pointer;
+}
+
+.mybtn-reverse{
+    border:2px solid $main-color;
+    background:white;
+    color:$main-color;
+    cursor: pointer;
+}
+
+.btn-v2{
+    border:1px solid white;
+    background:$main-color;
+    color:white;
+    border-radius:1px;
+    cursor: pointer;
+
+}
+
+.columns.is-vcentered {
+    -webkit-box-align: center;
+       -ms-flex-align: center;
+          align-items: center;
+    box-sizing: border-box !important;
+  }
+
+.radius-sm{
+    border-radius:15px !important;
+}
+
+.hr-sm{
+    background:lightgray;
+    opacity:0.5;
+
+}
+
+.is-borderless{
+    border:none;
+}
+
+.border-all{border:$main-border;}
+.border-t{border-top:$main-border}
+.border-l{border-left:$main-border}
+.border-r{border-right:$main-border}
+.border-b{border-bottom:$main-border}
+
+.section-category__underline{
+    width:50px;
+    height:3px;
+    background:lightgray;
+}
+
+.overlayer{
+    display:flex;
+    align-items:flex-end;
+    background:rgba(255,255,255,0.1);
+    background:linear-gradient(to bottom, rgba(28, 28, 28, 0) 60%,rgba(28, 28, 28, 0.5) 100%);
+}
+
+.overlayer-center{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(to top, rgba(28, 28, 28, 0) 10%,rgba(28, 28, 28, 0.5) 100%);
+}
+.gradios{
+    background:linear-gradient(to bottom, rgba(28, 28, 28, 0) 60%,rgba(28, 28, 28, 0.5) 100%);
+}
+
+.lt-spacing{
+    letter-spacing:3px;
+}
+
+.bordertop{ border-top:1px solid rgb(236, 235, 235)}
+
+.col-count-2{
+    column-count:2;
+}
+
+/* Header */ 
+
+header .top-navbar div{
+    font-size:0.91em;
+    color:white;
+}
+
+header .bottom-navbar{
+    font-size:0.86em;
+    color:$main-color;
+}
+
+/* Contact Section */ 
+
+.contact-section{
+    background-image:url("./assets/kitchen.jpg");
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+/* Forms */ 
+
+.custom-input{
+    background: #f9f9f9;
+    border:1px solid #f1f1f1;
+    outline:none;
+    color:$main-color;
+}
+.custom-input:hover{
+    border:1px solid #f1f1f1;
+}
+.custom-input:focus{
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border:1px solid #f1f1f1;
+}
+
+/* Tooltip */ 
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 3px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+  .hidden{
+      visibility: hidden;
+      display:none;
+  }
+
+  .flip{
+    transform: rotate(180deg)
+  } 
+
+  .is-transparent{
+      background:rgba(0,0,0,0) !important;
+  }
+
+@media only screen and (max-width: 600px) {
+    .mtb-middle{
+        margin-top:15% !important;
+    }
+}
